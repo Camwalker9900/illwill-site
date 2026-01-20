@@ -1,0 +1,82 @@
+---
+interface Props {
+  targetId: string;
+  controlsId: string;
+  defaultFilter?: 'all' | 'favorites' | 'live';
+}
+
+const { targetId, controlsId, defaultFilter = 'all' } = Astro.props as Props;
+const groupId = `mix-filter-${controlsId}`;
+const targetSelector = `#${targetId}`;
+---
+<div
+  class="filter-row"
+  id={groupId}
+  data-filter-group
+  data-target={targetSelector}
+  data-default-filter={defaultFilter}
+>
+  <button class="filter-button" type="button" data-filter-value="all">All</button>
+  <button class="filter-button" type="button" data-filter-value="favorites">Favorites</button>
+  <button class="filter-button" type="button" data-filter-value="live">Live Sessions</button>
+</div>
+
+<script is:inline data-group={groupId}>
+  (() => {
+    const scriptEl = document.currentScript;
+    if (!scriptEl) return;
+    const targetGroupId = scriptEl.dataset.group;
+    if (!targetGroupId) return;
+
+    const initFilters = () => {
+      const group = document.getElementById(targetGroupId);
+      if (!group) return;
+      const targetSelector = group.dataset.target;
+      if (!targetSelector) return;
+      const target = document.querySelector(targetSelector);
+      if (!target) return;
+      const cards = Array.from(target.querySelectorAll('[data-filterable]'));
+      const buttons = Array.from(group.querySelectorAll('[data-filter-value]'));
+
+      const setActive = (value) => {
+        buttons.forEach((button) => {
+          const isActive = button.dataset.filterValue === value;
+          button.classList.toggle('active', isActive);
+          button.setAttribute('aria-pressed', String(isActive));
+        });
+      };
+
+      const applyFilter = (value) => {
+        setActive(value);
+        cards.forEach((card) => {
+          if (!(card instanceof HTMLElement)) return;
+          const isFavorite = card.dataset.filterFavorite === 'true';
+          const isLive = card.dataset.filterLive === 'true';
+          let visible = true;
+          if (value === 'favorites') {
+            visible = isFavorite;
+          } else if (value === 'live') {
+            visible = isLive;
+          }
+          card.style.display = visible ? '' : 'none';
+        });
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const value = button.dataset.filterValue ?? 'all';
+          applyFilter(value);
+        });
+      });
+
+      applyFilter(group.dataset.defaultFilter ?? 'all');
+    };
+
+    const ready = () => initFilters();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', ready, { once: true });
+    } else {
+      ready();
+    }
+  })();
+</script>

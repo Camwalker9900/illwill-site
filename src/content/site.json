@@ -1,0 +1,73 @@
+{
+  "name": "IllWIll",
+  "tagline": "Melodic house momentum with open-format instincts.",
+  "location": "Houston, TX",
+  "email": "cameron.walker9900@gmail.com",
+  "website": "https://dj-illwill.com",
+  "soundcloudProfile": "https://soundcloud.com/illwill",
+  "links": {
+    "book": "/contact",
+    "listen": "https://soundcloud.com/illwill",
+    "epk": "/epk"
+  },
+  "socials": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/illwill.wav"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@cameronwalker10"
+    },
+    {
+      "label": "Twitch",
+      "url": "https://www.twitch.tv/illwill369"
+    },
+    {
+      "label": "SoundCloud",
+      "url": "https://soundcloud.com/illwill"
+    }
+  ],
+  "highlights": [
+    "Three years shaping the energy at private parties and community events",
+    "Comfortable moving between melodic house journeys and open-format flips",
+    "Known for cinematic builds that still leave room for curveball edits"
+  ],
+  "downloads": [
+    {
+      "label": "Press Photos (.zip)",
+      "url": "#"
+    },
+    {
+      "label": "Stage Plot",
+      "url": "#"
+    },
+    {
+      "label": "One Sheet (.pdf)",
+      "url": "#"
+    }
+  ],
+  "tech": [
+    "Pioneer DDJ-GRV6 controller",
+    "MacBook Air M1 running rekordbox / Serato",
+    "Stereo DI or balanced outs to FOH",
+    "Table height 40-44 in + dedicated power"
+  ],
+  "photos": [
+    {
+      "title": "Rooftop golden hour",
+      "description": "Wide shot with skyline backdrop.",
+      "image": ""
+    },
+    {
+      "title": "Club sweat set",
+      "description": "Tighter crop with crowd energy.",
+      "image": ""
+    },
+    {
+      "title": "Press-ready portrait",
+      "description": "Studio lighting, clean background.",
+      "image": ""
+    }
+  ]
+}

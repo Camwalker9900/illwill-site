@@ -1,0 +1,76 @@
+---
+import type { MixEntry } from '../lib/mix-data';
+import { formatDate, formatStat } from '../lib/format';
+
+interface Props {
+  mix: MixEntry;
+  layout?: 'compact' | 'full';
+  showEmbed?: boolean;
+  filterable?: boolean;
+}
+
+const { mix, layout = 'compact', showEmbed = false, filterable = false } = Astro.props as Props;
+const filterAttributes = filterable
+  ? {
+      'data-filterable': 'true',
+      'data-filter-favorite': mix.isFavorite ? 'true' : 'false',
+      'data-filter-live': mix.isLiveSession ? 'true' : 'false',
+    }
+  : {};
+const listenHref = mix.soundcloud_track_url ?? mix.url;
+const artworkSrc = mix.artwork ?? '/illwill-bg.png';
+---
+<article class={`card mix-card ${layout}`} {...filterAttributes} data-track-stats={listenHref}>
+  <div class="mix-card__media">
+    <img src={artworkSrc} alt={`Artwork for ${mix.title}`} loading="lazy" />
+  </div>
+  <header class="mix-card__header">
+    <div>
+      <p class="kicker">{mix.platform}</p>
+      <h3>{mix.title}</h3>
+    </div>
+    <span class="mix-meta">{formatDate(mix.date, { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+  </header>
+
+  <div class="mix-card__details">
+    <div class="tag-row">
+      {mix.isLiveSession && <span class="tag">Live Session</span>}
+      {mix.tags
+        .filter((tag) => tag !== 'favorite' && tag !== 'recent')
+        .map((tag) => (
+          <span class="tag alt">{tag}</span>
+        ))}
+      {mix.isFavorite && <span class="tag alt">Favorite</span>}
+    </div>
+    <div class="mix-actions">
+      <a class="button ghost" href={listenHref} target="_blank" rel="noreferrer">
+        Listen on SoundCloud
+      </a>
+      <a class="mix-meta" href={mix.url} target="_blank" rel="noreferrer">
+        Open track page ↗
+      </a>
+    </div>
+  </div>
+
+  <div class="mix-stats" aria-live="polite">
+    <div>
+      <span>Plays</span>
+      <strong data-stat="plays">{formatStat(mix.stats?.plays)}</strong>
+    </div>
+    <div>
+      <span>Likes</span>
+      <strong data-stat="likes">{formatStat(mix.stats?.likes)}</strong>
+    </div>
+  </div>
+
+  {showEmbed && mix.embed && (
+    <div class="mix-embed">
+      <iframe
+        title={`Listen to ${mix.title}`}
+        src={mix.embed}
+        loading="lazy"
+        allow="autoplay; clipboard-write"
+      ></iframe>
+    </div>
+  )}
+</article>

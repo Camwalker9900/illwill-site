@@ -1,22 +1,91 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import site from '../content/site.json';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  pageClass?: string;
+}
+
+const { title, description, ogImage, pageClass } = Astro.props as Props;
+const baseTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
+const metaDescription = description ?? `${site.name} delivers ${site.tagline}`;
+const canonicalBase = Astro.site ?? new URL(site.website ?? 'https://dj-illwill.com');
+const canonical = new URL(Astro.url.pathname, canonicalBase);
+const shareImage = ogImage ?? '/og-image.svg';
+const mainClass = ['page', pageClass].filter(Boolean).join(' ');
+---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={metaDescription} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href={canonical} />
+    <title>{baseTitle}</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={baseTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={shareImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={baseTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={shareImage} />
+  </head>
+  <body>
+    <Nav currentPath={Astro.url.pathname} />
+    <main class={mainClass}>
+      <slot />
+    </main>
+    <Footer />
+    <script is:inline>
+      (() => {
+        const statBlocks = Array.from(document.querySelectorAll('[data-track-stats]'));
+        if (!statBlocks.length) return;
+        const trackUrls = Array.from(
+          new Set(
+            statBlocks
+              .map((block) => block.getAttribute('data-track-stats'))
+              .filter((value) => Boolean(value))
+          )
+        );
+        if (!trackUrls.length) return;
+        const params = new URLSearchParams();
+        trackUrls.forEach((url) => params.append('track', url));
+        fetch(`/api/soundcloud?${params.toString()}`)
+          .then((response) => (response.ok ? response.json() : null))
+          .then((payload) => {
+            if (!payload?.tracks) return;
+            const formatNumber = (value) => {
+              if (typeof value !== 'number' || Number.isNaN(value)) return '—';
+              return new Intl.NumberFormat('en-US', {
+                notation: 'compact',
+                maximumFractionDigits: 1,
+              }).format(value);
+            };
+            statBlocks.forEach((block) => {
+              const track = block.getAttribute('data-track-stats');
+              if (!track) return;
+              const stats = payload.tracks[track];
+              if (!stats) return;
+              const playsTarget = block.querySelector('[data-stat="plays"]');
+              const likesTarget = block.querySelector('[data-stat="likes"]');
+              if (playsTarget) playsTarget.textContent = formatNumber(stats.plays);
+              if (likesTarget) likesTarget.textContent = formatNumber(stats.likes);
+            });
+          })
+          .catch(() => {
+            // swallow errors, fallback to cached values
+          });
+      })();
+    </script>
+  </body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="IllWIll social graphic">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04050c" />
+      <stop offset="60%" stop-color="#070b1a" />
+      <stop offset="100%" stop-color="#0b1224" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#66ffe0" />
+      <stop offset="100%" stop-color="#b46dff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="48" />
+  <circle cx="260" cy="460" r="320" fill="#66ffe0" opacity="0.08" />
+  <circle cx="900" cy="120" r="250" fill="#b46dff" opacity="0.12" />
+  <text x="120" y="220" fill="#f5f5f2" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="110" font-weight="600" letter-spacing="0.5rem">
+    ILLWILL
+  </text>
+  <text x="120" y="320" fill="#a8acb3" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="36" letter-spacing="0.4rem">
+    MELODIC HOUSE ENERGY
+  </text>
+  <path d="M120 380h960" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+  <text x="120" y="450" fill="#f5f5f2" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="48" font-weight="500">
+    Houston-based DJ • Open-format ready
+  </text>
+  <text x="120" y="520" fill="#a8acb3" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="32">
+    Bookings: booking@illwill.fm
+  </text>
+</svg>

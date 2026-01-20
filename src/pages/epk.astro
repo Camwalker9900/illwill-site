@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../content/site.json';
+
+const genres = ['Melodic House', 'Indie Dance', 'Afro/Organic', 'Open Format Flex'];
+const description = `${site.name} press kit + specs.`;
+---
+<Layout title="EPK" description={description}>
+  <section class="card stack">
+    <p class="kicker">Electronic Press Kit</p>
+    <h1>{site.name}</h1>
+    <p>
+      Based in {site.location}, IllWIll has spent the last three years shaping the vibe at private
+      parties, livestreams, and community events. The goal now: bring that cinematic melodic house
+      energy — with open-format instincts — to booked gigs and brand experiences.
+    </p>
+  </section>
+
+  <section class="split section">
+    <div class="card stack">
+      <h2>Quick stats</h2>
+      <ul class="tag-list">
+        {genres.map((genre) => (
+          <li class="tag">{genre}</li>
+        ))}
+      </ul>
+      <p>
+        Home base: <strong>{site.location}</strong>
+        <br />
+        Experience: 3+ years of parties + livestreams
+        <br />
+        Contact: <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+      <div class="button-row">
+        <a class="button primary" href={site.links.book}>Book IllWIll</a>
+        <a class="button secondary" href={site.links.listen} target="_blank" rel="noreferrer">
+          Listen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>Tech rider</h2>
+    <ul class="list-bullets">
+      {site.tech.map((line) => (
+        <li>{line}</li>
+      ))}
+    </ul>
+  </section>
+
+  <!--
+  <section class="section">
+    <h2>Press photos</h2>
+    <p>Upload final selects to <code>public/press/</code> and update the paths below.</p>
+    <div class="photo-grid">
+      {site.photos.map((photo) => (
+        <article class={`photo-card${photo.image ? ' filled' : ''}`}>
+          {photo.image ? (
+            <>
+              <img src={photo.image} alt={photo.title} loading="lazy" />
+              <strong>{photo.title}</strong>
+              <p>{photo.description}</p>
+            </>
+          ) : (
+            <>
+              <strong>{photo.title}</strong>
+              <p>{photo.description}</p>
+              <span class="mix-meta">Drop a file path into site.json</span>
+            </>
+          )}
+        </article>
+      ))}
+    </div>
+  </section>
+  -->
+</Layout>

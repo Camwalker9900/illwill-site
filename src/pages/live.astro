@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../content/site.json';
+import MixCard from '../components/MixCard.astro';
+import MixFilters from '../components/MixFilters.astro';
+import { getLiveMixes } from '../lib/mix-data';
+
+const liveMixes = getLiveMixes();
+const description = `${site.name} live session archive.`;
+const gridId = 'live-grid';
+---
+<Layout title="Live Sessions" description={description}>
+  <section>
+    <p class="kicker">Live Sessions</p>
+    <h1>Recorded energy, unfiltered.</h1>
+    <p>
+      Any mix with a title containing “Live Session” or the <code>is_live_session</code> flag in
+      <code>src/content/mixes.json</code> lands here automatically. Fine-tune the order in
+      <code>src/content/curation.json</code> if you want to spotlight select dates.
+    </p>
+  </section>
+
+  {liveMixes.length ? (
+    <section class="section">
+      <MixFilters targetId={gridId} controlsId="live" defaultFilter="live" />
+      <div id={gridId} class="mix-list" data-filterable-container>
+        {liveMixes.map((mix) => (
+          <MixCard mix={mix} layout="full" showEmbed filterable />
+        ))}
+      </div>
+    </section>
+  ) : (
+    <section class="section card">
+      <h3>No live sessions yet</h3>
+      <p>
+        Label any mix with <code>is_live_session: true</code> (or include “Live Session” in the title)
+        to populate this archive automatically.
+      </p>
+    </section>
+  )}
+</Layout>

@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../content/site.json';
+import MixCard from '../components/MixCard.astro';
+import MixFilters from '../components/MixFilters.astro';
+import { mixLibrary } from '../lib/mix-data';
+
+const description = `${site.name} DJ mixes, live recordings, and blends.`;
+const gridId = 'music-grid';
+---
+<Layout title="Music" description={description}>
+  <section>
+    <p class="kicker">Mix Archive</p>
+    <h1>Listen back anytime.</h1>
+  </section>
+
+  {mixLibrary.length ? (
+    <section class="section">
+      <MixFilters targetId={gridId} controlsId="music" defaultFilter="all" />
+      <div id={gridId} class="mix-list" data-filterable-container>
+        {mixLibrary.map((mix) => (
+          <MixCard mix={mix} layout="full" showEmbed filterable />
+        ))}
+      </div>
+    </section>
+  ) : (
+    <section class="section card">
+      <h3>No mixes yet</h3>
+      <p>Add new entries to <code>src/content/mixes.json</code> to populate this page.</p>
+    </section>
+  )}
+</Layout>

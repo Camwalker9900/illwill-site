@@ -1,11 +1,176 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import site from '../content/site.json';
+import MixCard from '../components/MixCard.astro';
+import {
+  getRecentMixes,
+  getPopularMixes,
+  getFavoriteMixes,
+  getLiveMixes,
+  mixLibrary,
+  soundcloudTotals,
+  soundcloudProfile,
+} from '../lib/mix-data';
+import { formatStat } from '../lib/format';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const genreTags = ['Melodic House', 'Deep Tech', 'Afro-leaning Rhythms', 'Open Format'];
+const featuredMix = mixLibrary[0];
+const recentMixes = getRecentMixes(3);
+const popularMixes = getPopularMixes(3);
+const favoriteMixes = getFavoriteMixes(3);
+const liveHighlights = getLiveMixes(3);
+const totals = soundcloudTotals;
+const description = 'IllWIll is a Houston-based DJ delivering melodic house journeys with the flexibility to flip open-format rooms on demand.';
 ---
+<Layout title="Home" description={description}>
+  <section class="split hero">
+    <div class="stack">
+      <p class="kicker">{site.location} • DJ / Curator</p>
+      <h1>IllWIll keeps the dance floor glowing in melodic color.</h1>
+      <p>
+        {site.name} leans into vocal-driven house, dynamic percussion, and edits that pull heads and
+        casual fans alike into the same orbit. Expect fluid storytelling that still leaves room to
+        go open-format when the night asks for it.
+      </p>
+      <ul class="tag-list">
+        {genreTags.map((tag) => (
+          <li class="tag">{tag}</li>
+        ))}
+      </ul>
+      <div class="button-row">
+        <a class="button primary" href={site.links.book}>Book IllWIll</a>
+        <a class="button secondary" href={site.links.listen} target="_blank" rel="noreferrer">
+          Listen
+        </a>
+        <a class="button ghost" href={site.links.epk}>EPK</a>
+      </div>
+    </div>
+    <div class="card stack">
+      <div>
+        <p class="kicker">Featured mix</p>
+        {featuredMix ? (
+          <>
+            <h3>{featuredMix.title}</h3>
+            <p class="mix-meta">
+              {new Date(featuredMix.date).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}
+              {' · '}{featuredMix.platform}
+            </p>
+            <div class="mix-embed">
+              <iframe
+                title={`Listen to ${featuredMix.title}`}
+                src={featuredMix.embed}
+                loading="lazy"
+                allow="autoplay"
+              ></iframe>
+            </div>
+            <a href={featuredMix.url} target="_blank" rel="noreferrer">Open {featuredMix.platform}</a>
+          </>
+        ) : (
+          <p>Drop your latest mix in <code>src/content/mixes.json</code> to feature it here.</p>
+        )}
+      </div>
+    </div>
+  </section>
 
-<Layout>
-	<Welcome />
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>Fresh rotation</h2>
+      </div>
+      <a class="mix-meta" href="/music">View all music ↗</a>
+    </div>
+    {recentMixes.length ? (
+      <div class="mix-list tight">
+        {recentMixes.map((mix) => (
+          <MixCard mix={mix} layout="compact" />
+        ))}
+      </div>
+    ) : (
+      <p class="mix-meta">Add new mixes to <code>src/content/mixes.json</code> to populate this list.</p>
+    )}
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>High-play highlights</h2>
+      </div>
+    </div>
+    {popularMixes.length ? (
+      <div class="mix-list tight">
+        {popularMixes.map((mix) => (
+          <MixCard mix={mix} layout="compact" />
+        ))}
+      </div>
+    ) : (
+      <p class="mix-meta">Stats unavailable — add manual ordering via <code>src/content/mixes.json</code>.</p>
+    )}
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>Curated picks</h2>
+      </div>
+    </div>
+    {favoriteMixes.length ? (
+      <div class="mix-list tight">
+        {favoriteMixes.map((mix) => (
+          <MixCard mix={mix} layout="compact" />
+        ))}
+      </div>
+    ) : (
+      <p class="mix-meta">Add ids to <code>src/content/curation.json</code> to surface favorites.</p>
+    )}
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>Captured in the moment</h2>
+      </div>
+      <a class="mix-meta" href="/live">View live archive ↗</a>
+    </div>
+    {liveHighlights.length ? (
+      <div class="mix-list tight">
+        {liveHighlights.map((mix) => (
+          <MixCard mix={mix} layout="compact" />
+        ))}
+      </div>
+    ) : (
+      <p class="mix-meta">Mark mixes with "is_live_session" to highlight them here.</p>
+    )}
+  </section>
+
+  <section class="section card stats-card">
+    <div>
+      <p class="kicker">SoundCloud pulse</p>
+      <h2>Audience snapshots</h2>
+    </div>
+    <div class="stat-grid">
+      <div>
+        <span>Total plays</span>
+        <strong>{formatStat(totals?.plays)}</strong>
+      </div>
+      <div>
+        <span>Total likes</span>
+        <strong>{formatStat(totals?.likes)}</strong>
+      </div>
+      <div>
+        <span>Mixes</span>
+        <strong>{totals?.mixes ?? mixLibrary.length}</strong>
+      </div>
+    </div>
+    <div class="mix-actions">
+      <a class="button ghost" href={soundcloudProfile ?? site.soundcloudProfile} target="_blank" rel="noreferrer">
+        Follow on SoundCloud
+      </a>
+      {(!totals?.plays || !totals?.likes) && (
+        <span class="mix-meta">
+          Add play/like counts in <code>src/content/soundcloud_cache.json</code> or supply API creds to
+          fetch them automatically.
+        </span>
+      )}
+    </div>
+  </section>
 </Layout>

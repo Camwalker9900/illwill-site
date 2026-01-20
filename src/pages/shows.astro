@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../content/site.json';
+import shows from '../content/shows.json';
+
+const description = `${site.name} upcoming shows, holds, and routing.`;
+---
+<Layout title="Shows" description={description}>
+  <section>
+    <p class="kicker">On Deck</p>
+    <h1>Routing + hold dates.</h1>
+    <p>Update <code>src/content/shows.json</code> whenever you have confirmed gigs.</p>
+  </section>
+
+  {shows.length ? (
+    <section class="section show-list">
+      {shows.map((show) => (
+        <article class="show-item">
+          <div class="show-meta">
+            <strong>{new Date(show.date).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })}</strong>
+            <span>{show.city}</span>
+          </div>
+          <div class="show-meta">
+            <span>{show.venue}</span>
+            {show.ticket_url && (
+              <a class="button ghost" href={show.ticket_url} target="_blank" rel="noreferrer">
+                Tickets
+              </a>
+            )}
+          </div>
+        </article>
+      ))}
+    </section>
+  ) : (
+    <section class="section card">
+      <h3>No upcoming shows.</h3>
+      <p>
+        Lock in IllWIll for your room — email <a href={`mailto:${site.email}`}>{site.email}</a> or
+        drop a booking request via the contact form.
+      </p>
+    </section>
+  )}
+
+  <section class="section card">
+    <h2>Travel & holds</h2>
+    <p>
+      Based in {site.location}. Available for US fly dates Thursday-Sunday, and intl routing with 4
+      weeks notice. Provide travel + lodging where needed.
+    </p>
+    <a class="button primary" href="/contact">Check availability</a>
+  </section>
+</Layout>

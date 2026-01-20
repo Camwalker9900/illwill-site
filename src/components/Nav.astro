@@ -1,0 +1,54 @@
+---
+import site from '../content/site.json';
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Music', href: '/music' },
+  { label: 'Live', href: '/live' },
+  { label: 'Shows', href: '/shows' },
+  { label: 'EPK', href: '/epk' },
+  { label: 'Contact', href: '/contact' }
+];
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath = '/' } = Astro.props as Props;
+---
+<nav aria-label="Primary">
+  <div class="nav-bar">
+    <a class="logo" href="/">
+      {site.name}
+      <small>{site.location}</small>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">
+      Menu
+    </button>
+    <div class="nav-links" data-nav-links>
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class={item.href === currentPath ? 'active' : ''}
+          aria-current={item.href === currentPath ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+      <a class="button primary" href={site.links.book}>Book IllWIll</a>
+    </div>
+  </div>
+</nav>
+
+<script is:inline>
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const navLinks = document.querySelector('[data-nav-links]');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+  }
+</script>

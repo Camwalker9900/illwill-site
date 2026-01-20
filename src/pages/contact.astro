@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../content/site.json';
+
+const description = `Book ${site.name} for shows, brand events, or curated sets.`;
+const formAction = 'https://formspree.io/f/your-form-id';
+---
+<Layout title="Contact" description={description}>
+  <section class="split">
+    <div class="card stack">
+      <p class="kicker">Bookings & Press</p>
+      <h1>Reach IllWIll directly.</h1>
+      <p>
+        Drop routing info, budgets, and vibe notes. Expect a response within 48 hours from
+        <a href={`mailto:${site.email}`}>{site.email}</a>.
+      </p>
+      <div class="button-row">
+        <a class="button primary" href={`mailto:${site.email}`}>Email {site.email}</a>
+        <a class="button secondary" href={site.links.epk}>Download EPK</a>
+      </div>
+      <div>
+        <h3>Socials</h3>
+        <div class="social-row">
+          {site.socials.map((social) => (
+            <a href={social.url} target="_blank" rel="noreferrer">{social.label}</a>
+          ))}
+        </div>
+      </div>
+    </div>
+    <div class="card stack">
+      <h2>Booking form</h2>
+      <form action={formAction} method="POST">
+        <label>
+          Name / Company
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@email.com" required />
+        </label>
+        <label>
+          Event date
+          <input type="date" name="event_date" />
+        </label>
+        <label>
+          Event location
+          <input type="text" name="location" placeholder="Venue / City" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" placeholder="Run of show, vibe notes, budget" required></textarea>
+        </label>
+        <input type="hidden" name="_subject" value="New inquiry from illwill.fm" />
+        <input type="submit" value="Send request" />
+      </form>
+      <p class="mix-meta">
+        Replace the Formspree endpoint inside <code>src/pages/contact.astro</code> once you create
+        your form ID.
+      </p>
+    </div>
+  </section>
+</Layout>

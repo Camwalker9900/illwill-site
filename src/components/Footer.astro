@@ -1,0 +1,18 @@
+---
+import site from '../content/site.json';
+
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="social-row" aria-label="Social links">
+    {site.socials.map((social) => (
+      <a href={social.url} target="_blank" rel="noreferrer">
+        {social.label}
+      </a>
+    ))}
+  </div>
+  <p>
+    © {year} {site.name}. Based in {site.location}. Bookings:
+    <a href={`mailto:${site.email}`}>{site.email}</a>
+  </p>
+</footer>
