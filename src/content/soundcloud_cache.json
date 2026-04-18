@@ -2,12 +2,18 @@
   "profile": "https://soundcloud.com/illwill",
   "generated_at": null,
   "totals": {
-    "plays": 22833,
-    "likes": 973,
-    "reposts": null,
+    "plays": 27836,
+    "likes": 1090,
+    "reposts": 143,
     "mixes": 40
   },
   "tracks": {
+    "https://soundcloud.com/cameron-walker-83/illwill-live-session-022-03-10": {
+      "plays": 125,
+      "likes": 7,
+      "reposts": 0,
+      "last_updated": "2026-03-11T01:33:24Z"
+    },
     "https://soundcloud.com/cameron-walker-83/melodic-house-2k25-pt2": {
       "plays": null,
       "likes": null,

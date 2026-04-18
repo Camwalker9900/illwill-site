@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "date": "2026-04-18",
+    "title": "Dri Tri Event",
+    "venue": "West U OTF",
+    "city": "Houston, TX",
+    "ticket_url": null
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Sunset mix",
+    "venue": "TruFusion rooftop",
+    "city": "Houston, TX",
+    "ticket_url": null
+  },
+  {
+    "date": "2026-05-21",
+    "title": "Sweat & Dance",
+    "venue": "Art Club Houston",
+    "city": "Houston, TX",
+    "ticket_url": null
+  }
+]

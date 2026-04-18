@@ -36,7 +36,7 @@ const artworkSrc = mix.artwork ?? '/illwill-bg.png';
     <div class="tag-row">
       {mix.isLiveSession && <span class="tag">Live Session</span>}
       {mix.tags
-        .filter((tag) => tag !== 'favorite' && tag !== 'recent')
+        .filter((tag) => tag !== 'favorite' && tag !== 'recent' && tag !== 'featured')
         .map((tag) => (
           <span class="tag alt">{tag}</span>
         ))}
