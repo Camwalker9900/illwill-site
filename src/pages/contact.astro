@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import site from '../content/site.json';
 
 const description = `Book ${site.name} for shows, brand events, or curated sets.`;
-const formAction = 'https://formspree.io/f/your-form-id';
+const formAction = `https://formsubmit.co/${site.email}`;
+const successUrl = `${site.website}/contact/success`;
 ---
 <Layout title="Contact" description={description}>
   <section class="split">
@@ -30,6 +31,10 @@ const formAction = 'https://formspree.io/f/your-form-id';
     <div class="card stack">
       <h2>Booking form</h2>
       <form action={formAction} method="POST">
+        <input type="hidden" name="_next" value={successUrl} />
+        <input type="hidden" name="_subject" value="New DJ booking inquiry from dj-illwill.com" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" class="sr-only" tabIndex={-1} autoComplete="off" />
         <label>
           Name / Company
           <input type="text" name="name" placeholder="Your name" required />
@@ -47,16 +52,16 @@ const formAction = 'https://formspree.io/f/your-form-id';
           <input type="text" name="location" placeholder="Venue / City" />
         </label>
         <label>
+          Budget
+          <input type="text" name="budget" placeholder="Estimated budget" />
+        </label>
+        <label>
           Message
           <textarea name="message" placeholder="Run of show, vibe notes, budget" required></textarea>
         </label>
-        <input type="hidden" name="_subject" value="New inquiry from illwill.fm" />
         <input type="submit" value="Send request" />
       </form>
-      <p class="mix-meta">
-        Replace the Formspree endpoint inside <code>src/pages/contact.astro</code> once you create
-        your form ID.
-      </p>
+      <p class="mix-meta">Submissions route to {site.email}.</p>
     </div>
   </section>
 </Layout>

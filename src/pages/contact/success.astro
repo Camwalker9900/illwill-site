@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import site from '../../content/site.json';
+
+const description = `Booking inquiry received for ${site.name}.`;
+---
+<Layout title="Inquiry Sent" description={description}>
+  <section class="card stack">
+    <p class="kicker">Inquiry sent</p>
+    <h1>Thanks. I&rsquo;ll follow up soon.</h1>
+    <p>
+      Your booking request has been submitted. If anything is urgent, email
+      <a href={`mailto:${site.email}`}>{site.email}</a>.
+    </p>
+    <div class="button-row">
+      <a class="button primary" href="/">Back home</a>
+      <a class="button secondary" href={`mailto:${site.email}`}>Email directly</a>
+    </div>
+  </section>
+</Layout>
