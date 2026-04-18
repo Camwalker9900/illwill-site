@@ -1,7 +1,7 @@
 // @ts-nocheck
 import soundcloudCache from '../../src/content/soundcloud_cache.json';
 
-const MAX_TRACKS_PER_REQUEST = 10;
+const MAX_TRACKS_PER_REQUEST = 50;
 const DEFAULT_CLIENT_ID = 'IM4oDkstWaLZ4D2ZEbz4DykKHSAlPKC6';
 const DEFAULT_PROFILE = 'https://soundcloud.com/illwill';
 const DEFAULT_SITE = 'https://dj-illwill.com';
@@ -26,34 +26,46 @@ const normalizeCacheTracks = () => {
 const fetchSoundCloudTracks = async (trackUrls: string[], clientId: string) => {
   const results: Record<string, any> = {};
   const subset = trackUrls.slice(0, MAX_TRACKS_PER_REQUEST);
-  for (const trackUrl of subset) {
-    try {
-      const resolveUrl = `https://api.soundcloud.com/resolve?url=${encodeURIComponent(trackUrl)}&client_id=${clientId}`;
-      const response = await fetch(resolveUrl, {
-        headers: {
-          Accept: 'application/json',
-        },
-      });
-      if (!response.ok) continue;
-      const data = await response.json();
-      const stats = {
-        id: data?.id ?? null,
-        title: data?.title ?? null,
-        plays: typeof data?.playback_count === 'number' ? data.playback_count : null,
-        likes:
-          typeof data?.likes_count === 'number'
-            ? data.likes_count
-            : typeof data?.favoritings_count === 'number'
-              ? data.favoritings_count
-              : null,
-        reposts: typeof data?.reposts_count === 'number' ? data.reposts_count : null,
-        last_updated: new Date().toISOString(),
-      };
-      results[trackUrl] = stats;
-    } catch (error) {
-      // ignore network/credential errors and fall back to cache
-    }
-  }
+
+  const responses = await Promise.all(
+    subset.map(async (trackUrl) => {
+      try {
+        const resolveUrl = `https://api.soundcloud.com/resolve?url=${encodeURIComponent(trackUrl)}&client_id=${clientId}`;
+        const response = await fetch(resolveUrl, {
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+        if (!response.ok) return null;
+        const data = await response.json();
+        return {
+          trackUrl,
+          stats: {
+            id: data?.id ?? null,
+            title: data?.title ?? null,
+            plays: typeof data?.playback_count === 'number' ? data.playback_count : null,
+            likes:
+              typeof data?.likes_count === 'number'
+                ? data.likes_count
+                : typeof data?.favoritings_count === 'number'
+                  ? data.favoritings_count
+                  : null,
+            reposts: typeof data?.reposts_count === 'number' ? data.reposts_count : null,
+            last_updated: new Date().toISOString(),
+          },
+        };
+      } catch (error) {
+        // ignore network/credential errors and fall back to cache
+        return null;
+      }
+    })
+  );
+
+  responses.forEach((entry) => {
+    if (!entry) return;
+    results[entry.trackUrl] = entry.stats;
+  });
+
   return results;
 };
 
