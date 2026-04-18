@@ -14,7 +14,7 @@ import {
 import { formatStat } from '../lib/format';
 
 const genreTags = ['Melodic House', 'Deep Tech', 'Afro-leaning Rhythms', 'Open Format'];
-const featuredMix = mixLibrary[0];
+const featuredMix = mixLibrary.find((mix) => mix.tags.includes('featured')) ?? mixLibrary[0];
 const recentMixes = getRecentMixes(3);
 const popularMixes = getPopularMixes(3);
 const favoriteMixes = getFavoriteMixes(3);

@@ -9,7 +9,6 @@
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2281474550&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-QPX2hhOPo2axpYN9-qDykYw-t500x500.png",
     "tags": [
-      "featured",
       "live"
     ],
     "is_live_session": true
@@ -78,7 +77,8 @@
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2161802913&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-GZ6v08L6UQ340Xxl-AyblEg-t500x500.jpg",
     "tags": [
-      "recent"
+      "recent",
+      "featured"
     ],
     "is_live_session": false
   },
