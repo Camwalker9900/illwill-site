@@ -26,7 +26,7 @@ const description = 'IllWIll is a Houston-based DJ delivering melodic house jour
   <section class="split hero">
     <div class="stack">
       <p class="kicker">{site.location} • DJ / Curator</p>
-      <h1>IllWIll keeps the dance floor glowing in melodic color.</h1>
+      <h1>Turn On, Tune in, Phones Down</h1>
       <p>
         {site.name} leans into vocal-driven house, dynamic percussion, and edits that pull heads and
         casual fans alike into the same orbit. Expect fluid storytelling that still leaves room to
@@ -157,8 +157,8 @@ const description = 'IllWIll is a Houston-based DJ delivering melodic house jour
         <strong>{formatStat(totals?.likes)}</strong>
       </div>
       <div>
-        <span>Mixes</span>
-        <strong>{totals?.mixes ?? mixLibrary.length}</strong>
+        <span>Reposts</span>
+        <strong>{formatStat(totals?.reposts)}</strong>
       </div>
     </div>
     <div class="mix-actions">
