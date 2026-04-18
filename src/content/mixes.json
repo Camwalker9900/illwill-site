@@ -8,7 +8,24 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-live-session-022-03-10",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2281474550&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-QPX2hhOPo2axpYN9-qDykYw-t500x500.png",
-    "tags": ["featured", "live"],
+    "tags": [
+      "featured",
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "illwill-live-session-021",
+    "title": "ILLWIll Live Session 021 (12.10.25)",
+    "platform": "SoundCloud",
+    "date": "2025-12-10",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-live-session-021-121025",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-live-session-021-121025",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2228056190&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-hTg4y9CrCB9VWmbO-HLaKxw-t500x500.jpg",
+    "tags": [
+      "live"
+    ],
     "is_live_session": true
   },
   {
@@ -20,43 +37,21 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/melodic-house-2k25-pt2",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2219352584&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-XZUa3HANjZULRZKE-zRRlxg-t500x500.jpg",
-    "tags": ["recent"],
+    "tags": [
+      "recent"
+    ],
     "is_live_session": false
   },
   {
-    "id": "fitradio-sucks",
-    "title": "FITRADIO Sucks (Group Fitness Mix 2025)",
+    "id": "otf-halloween-spirit-workout-mix-2025",
+    "title": "Spooky SZN (OTF Workout Mix 2025)",
     "platform": "SoundCloud",
-    "date": "2025-01-05",
-    "url": "https://soundcloud.com/cameron-walker-83/fitradio-sucks",
-    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/fitradio-sucks",
-    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2161802913&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-    "artwork": "https://i1.sndcdn.com/artworks-GZ6v08L6UQ340Xxl-AyblEg-t500x500.jpg",
-    "tags": ["recent"],
-    "is_live_session": false
-  },
-  {
-    "id": "ultra-2025-inspired",
-    "title": "Ultra 2025 Inspired DJ Mix",
-    "platform": "SoundCloud",
-    "date": "2025-03-10",
-    "url": "https://soundcloud.com/cameron-walker-83/ultra-2025-inspired-dj-mix-anyma-dom-dolla-tiesto-john-summit-solomun-boris-brejcha-alesso-afrojack-artbat-armin-van-burren-deadmau5-kevin-de-vries-martin-garrix-miss-monique",
-    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/ultra-2025-inspired-dj-mix-anyma-dom-dolla-tiesto-john-summit-solomun-boris-brejcha-alesso-afrojack-artbat-armin-van-burren-deadmau5-kevin-de-vries-martin-garrix-miss-monique",
-    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2069590768&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-    "artwork": "https://i1.sndcdn.com/artworks-CDZP72wcvsHYgR9O-529XEQ-t500x500.jpg",
-    "tags": ["recent"],
-    "is_live_session": false
-  },
-  {
-    "id": "pride-party-2025",
-    "title": "Pride Party 2025 Workout Mix (Clean)",
-    "platform": "SoundCloud",
-    "date": "2025-06-01",
-    "url": "https://soundcloud.com/cameron-walker-83/pride-party-2025-workout-mix-clean",
-    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/pride-party-2025-workout-mix-clean",
-    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2108556951&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-    "artwork": "https://i1.sndcdn.com/artworks-pvo2Y9OpKTfQDFik-zL8J0A-t500x500.jpg",
-    "tags": ["recent"],
+    "date": "2025-10-01",
+    "url": "https://soundcloud.com/cameron-walker-83/otf-halloween-spirit-workout-mix-2025",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/otf-halloween-spirit-workout-mix-2025",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2179669395&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-JTTzyPxJ7FEQKTdX-m0mOgA-t500x500.png",
+    "tags": [],
     "is_live_session": false
   },
   {
@@ -68,32 +63,36 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/drums-in-space-yoga-flow",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2177109681&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-kzX24JXEEyJz4y1h-qiOUmg-t500x500.jpg",
-    "tags": ["favorite"],
+    "tags": [
+      "favorite"
+    ],
     "is_live_session": false
   },
   {
-    "id": "hip-hop-party-summer-2025",
-    "title": "Hip-Hop House Party 2025 DJ Mix",
+    "id": "fitradio-sucks",
+    "title": "FITRADIO Sucks (Group Fitness Mix 2025)",
     "platform": "SoundCloud",
-    "date": "2025-07-01",
-    "url": "https://soundcloud.com/cameron-walker-83/hip-hop-party-dj-mix-summer-2025",
-    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/hip-hop-party-dj-mix-summer-2025",
-    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2120306334&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-    "artwork": "https://i1.sndcdn.com/artworks-32MU2zHAbZ8Ehb9A-sroAQg-t500x500.jpg",
-    "tags": ["favorite"],
+    "date": "2025-01-05",
+    "url": "https://soundcloud.com/cameron-walker-83/fitradio-sucks",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/fitradio-sucks",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2161802913&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-GZ6v08L6UQ340Xxl-AyblEg-t500x500.jpg",
+    "tags": [
+      "recent"
+    ],
     "is_live_session": false
   },
   {
-    "id": "illwill-live-session-021",
-    "title": "ILLWIll Live Session 021 (12.10.25)",
+    "id": "artist-spotlight-lp-giobbi",
+    "title": "LP Giobbi - Artist Spotlight Mix",
     "platform": "SoundCloud",
-    "date": "2025-12-10",
-    "url": "https://soundcloud.com/cameron-walker-83/illwill-live-session-021-121025",
-    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-live-session-021-121025",
-    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2228056190&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-    "artwork": "https://i1.sndcdn.com/artworks-hTg4y9CrCB9VWmbO-HLaKxw-t500x500.jpg",
-    "tags": ["live"],
-    "is_live_session": true
+    "date": "2025-07-15",
+    "url": "https://soundcloud.com/cameron-walker-83/artist-spotlight-lp-giobbi",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/artist-spotlight-lp-giobbi",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2130022587&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-lwOIzjYzkDJPiDS8-BsAy4w-t500x500.jpg",
+    "tags": [],
+    "is_live_session": false
   },
   {
     "id": "illwill-live-session-020",
@@ -104,7 +103,9 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-live-session-020-070925",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2127423885&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-V8f1AW0E6LAnvF8Q-uqGyNA-t500x500.jpg",
-    "tags": ["live"],
+    "tags": [
+      "live"
+    ],
     "is_live_session": true
   },
   {
@@ -116,8 +117,36 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/red-white-house-4th-of-july-mix-2025",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2123545920&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-0s5G4lTDCrPUt3iq-O0xROA-t500x500.jpg",
-    "tags": ["live"],
+    "tags": [
+      "live"
+    ],
     "is_live_session": true
+  },
+  {
+    "id": "hip-hop-party-summer-2025",
+    "title": "Hip-Hop House Party 2025 DJ Mix",
+    "platform": "SoundCloud",
+    "date": "2025-07-01",
+    "url": "https://soundcloud.com/cameron-walker-83/hip-hop-party-dj-mix-summer-2025",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/hip-hop-party-dj-mix-summer-2025",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2120306334&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-32MU2zHAbZ8Ehb9A-sroAQg-t500x500.jpg",
+    "tags": [
+      "favorite"
+    ],
+    "is_live_session": false
+  },
+  {
+    "id": "pride-anthems-2025-workout-mix",
+    "title": "PRIDE ANTHEMS 2025 (Workout Mix)",
+    "platform": "SoundCloud",
+    "date": "2025-06-20",
+    "url": "https://soundcloud.com/cameron-walker-83/pride-anthems-2025-workout-mix",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/pride-anthems-2025-workout-mix",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2116509639&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-ngMkF3tLIl8ggsHR-1eSLTg-t500x500.png",
+    "tags": [],
+    "is_live_session": false
   },
   {
     "id": "session-61825",
@@ -128,19 +157,61 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/61825a",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2115813768&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-sZkf7yUrSVPSaPZp-ZzGg8A-t500x500.jpg",
-    "tags": ["live"],
+    "tags": [
+      "live"
+    ],
     "is_live_session": true
   },
   {
-    "id": "illwill-2025-mix-vol01",
-    "title": "Melodic House 2K25 Vol.01",
+    "id": "rip-bonnaroo-2025",
+    "title": "Bonnaroo 2025 Inspired DJ Mix (John Summit, Dom Dolla, Justice, Max Styler, Inzo, & more)",
     "platform": "SoundCloud",
-    "date": "2025-02-01",
-    "url": "https://soundcloud.com/cameron-walker-83/illwill-2025-mix-vol01",
-    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-2025-mix-vol01",
-    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2023198532&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-    "artwork": "https://i1.sndcdn.com/artworks-yHKz4e5jlLNK0zhV-gbmplg-t500x500.jpg",
-    "tags": ["recent"],
+    "date": "2025-06-16",
+    "url": "https://soundcloud.com/cameron-walker-83/rip-bonnaroo-2025",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/rip-bonnaroo-2025",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2114558190&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-dbqUWGKG2YZBWOq1-hw94Yg-t500x500.png",
+    "tags": [],
+    "is_live_session": false
+  },
+  {
+    "id": "pride-party-2025",
+    "title": "Pride Party 2025 Workout Mix (Clean)",
+    "platform": "SoundCloud",
+    "date": "2025-06-01",
+    "url": "https://soundcloud.com/cameron-walker-83/pride-party-2025-workout-mix-clean",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/pride-party-2025-workout-mix-clean",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2108556951&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-pvo2Y9OpKTfQDFik-zL8J0A-t500x500.jpg",
+    "tags": [
+      "recent"
+    ],
+    "is_live_session": false
+  },
+  {
+    "id": "51225a",
+    "title": "IllWIll Live Session 017 (05.12.25)",
+    "platform": "SoundCloud",
+    "date": "2025-05-13",
+    "url": "https://soundcloud.com/cameron-walker-83/51225a",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/51225a",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2094724095&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-NxcyaLk2n7c3MB1t-7eut2g-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "workout-mix-2025",
+    "title": "After Dark Glow Dance Party 2025 (Workout Mix) *Clean*",
+    "platform": "SoundCloud",
+    "date": "2025-05-03",
+    "url": "https://soundcloud.com/cameron-walker-83/workout-mix-2025",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/workout-mix-2025",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2089428126&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-FEoVKbGgpuYfF8Ko-Uo06Ng-t500x500.png",
+    "tags": [],
     "is_live_session": false
   },
   {
@@ -152,7 +223,246 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/43025a",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2088317220&color=%23b269ff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-WcMp24hPnECMk0nd-3VqYbw-t500x500.jpg",
-    "tags": ["recent", "live"],
+    "tags": [
+      "recent",
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "420_25",
+    "title": "IllWIll Live Session 015 (04.20.25)",
+    "platform": "SoundCloud",
+    "date": "2025-04-20",
+    "url": "https://soundcloud.com/cameron-walker-83/420_25",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/420_25",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2082212259&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-AyTJYxuoMSYNOgCJ-4jRtvw-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "4425a",
+    "title": "IllWIll Live Session 014 (04.04.25)",
+    "platform": "SoundCloud",
+    "date": "2025-04-07",
+    "url": "https://soundcloud.com/cameron-walker-83/4425a",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/4425a",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2073079596&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-QEmZKYt5Wi7DGGqn-8Va5DQ-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "ultra-2025-inspired",
+    "title": "Ultra 2025 Inspired DJ Mix",
+    "platform": "SoundCloud",
+    "date": "2025-03-10",
+    "url": "https://soundcloud.com/cameron-walker-83/ultra-2025-inspired-dj-mix-anyma-dom-dolla-tiesto-john-summit-solomun-boris-brejcha-alesso-afrojack-artbat-armin-van-burren-deadmau5-kevin-de-vries-martin-garrix-miss-monique",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/ultra-2025-inspired-dj-mix-anyma-dom-dolla-tiesto-john-summit-solomun-boris-brejcha-alesso-afrojack-artbat-armin-van-burren-deadmau5-kevin-de-vries-martin-garrix-miss-monique",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2069590768&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-CDZP72wcvsHYgR9O-529XEQ-t500x500.jpg",
+    "tags": [
+      "recent"
+    ],
+    "is_live_session": false
+  },
+  {
+    "id": "32725a",
+    "title": "IllWIll Live Session 013 (03.27.25)",
+    "platform": "SoundCloud",
+    "date": "2025-03-28",
+    "url": "https://soundcloud.com/cameron-walker-83/32725a",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/32725a",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2065138248&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-qFvFtsRvbdarJE3x-CIByrQ-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "32425a",
+    "title": "IllWIll Live Session 012 (03.24.25)",
+    "platform": "SoundCloud",
+    "date": "2025-03-25",
+    "url": "https://soundcloud.com/cameron-walker-83/32425a",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/32425a",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2062959864&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-7NY7A2xfPtcsvRFY-zxciuw-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "31425a",
+    "title": "IllWIll Live Session 011 (03.14.25)",
+    "platform": "SoundCloud",
+    "date": "2025-03-16",
+    "url": "https://soundcloud.com/cameron-walker-83/31425a",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/31425a",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2055723756&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-Vwodmv4Vc3JdEWH7-u3rupw-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "3825a",
+    "title": "IllWIll Live Session 010 (03.08.25)",
+    "platform": "SoundCloud",
+    "date": "2025-03-08",
+    "url": "https://soundcloud.com/cameron-walker-83/3825a",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/3825a",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2049824736&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-SXfHQXK8lfhRI7yh-EsAydw-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "3225-stream-recording",
+    "title": "IllWIll Live Session 009 (03.02.25)",
+    "platform": "SoundCloud",
+    "date": "2025-03-04",
+    "url": "https://soundcloud.com/cameron-walker-83/3225-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/3225-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2046576172&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-rKMfo1AGbHi566fy-7j3ViQ-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "22825-stream-recording",
+    "title": "IllWIll Live Session 008 (02.28.25)",
+    "platform": "SoundCloud",
+    "date": "2025-03-01",
+    "url": "https://soundcloud.com/cameron-walker-83/22825-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/22825-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2044901748&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-g5w7d8IVgzuE18IJ-cMFF4g-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "22225-pt2-stream-recording",
+    "title": "IllWIll Live Session 007 (02.22.25) pt.2",
+    "platform": "SoundCloud",
+    "date": "2025-02-24",
+    "url": "https://soundcloud.com/cameron-walker-83/22225-pt2-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/22225-pt2-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2040831072&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-K0uJKzaCsmRgrYpz-XIDVzQ-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "22225-pt1-stream-recording",
+    "title": "IllWIll Live Session 006 (02.22.25) pt.1",
+    "platform": "SoundCloud",
+    "date": "2025-02-24",
+    "url": "https://soundcloud.com/cameron-walker-83/22225-pt1-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/22225-pt1-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2040828176&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-AmGJvf7AzkY0bFyO-6t9BYA-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "illwill-21625-stream-recording",
+    "title": "IllWIll Live Session 005 (02.16.25)",
+    "platform": "SoundCloud",
+    "date": "2025-02-16",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-21625-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-21625-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2036021280&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-5Z1Eym9GWB518nh2-ihMnyQ-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "valentines-day-2025-dj-set",
+    "title": "Valentines Vibes",
+    "platform": "SoundCloud",
+    "date": "2025-02-15",
+    "url": "https://soundcloud.com/cameron-walker-83/valentines-day-2025-dj-set",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/valentines-day-2025-dj-set",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2034829972&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-qIjREPckavT3zQxs-wQGzYw-t500x500.png",
+    "tags": [],
+    "is_live_session": false
+  },
+  {
+    "id": "illwill-2625-stream-recording",
+    "title": "IllWIll Live Session 004 (02.06.25)",
+    "platform": "SoundCloud",
+    "date": "2025-02-07",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-2625-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-2625-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2028295832&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-Rzh4gvYFAvjLmtWm-hQkEVg-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "illwill-2025-mix-vol01",
+    "title": "Melodic House 2K25 Vol.01",
+    "platform": "SoundCloud",
+    "date": "2025-02-01",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-2025-mix-vol01",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-2025-mix-vol01",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2023198532&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-yHKz4e5jlLNK0zhV-gbmplg-t500x500.jpg",
+    "tags": [
+      "recent"
+    ],
+    "is_live_session": false
+  },
+  {
+    "id": "illwill-12425-stream-recording",
+    "title": "IllWIll Live Session 003 (01.24.25)",
+    "platform": "SoundCloud",
+    "date": "2025-01-25",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-12425-stream-recording",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-12425-stream-recording",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2017723469&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-HNy1rAIpaYnO8wv2-ZxGZ4w-t500x500.png",
+    "tags": [
+      "live"
+    ],
+    "is_live_session": true
+  },
+  {
+    "id": "illwill-1-23-25",
+    "title": "IllWIll Live Session 002 (01.23.25)",
+    "platform": "SoundCloud",
+    "date": "2025-01-24",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-1-23-25",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-1-23-25",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2016837115&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-QZppQVUdLW1OyyEZ-i0cpsg-t500x500.png",
+    "tags": [
+      "live"
+    ],
     "is_live_session": true
   },
   {
@@ -164,7 +474,70 @@
     "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-11725-stream-recording",
     "embed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2011653267&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "artwork": "https://i1.sndcdn.com/artworks-IINWzQD9rgXDKJAc-gvm4hA-t500x500.jpg",
-    "tags": ["recent", "live"],
+    "tags": [
+      "recent",
+      "live"
+    ],
     "is_live_session": true
+  },
+  {
+    "id": "illwill-fall-2024-mixtape",
+    "title": "2024 Fall Mix",
+    "platform": "SoundCloud",
+    "date": "2024-11-18",
+    "url": "https://soundcloud.com/cameron-walker-83/illwill-fall-2024-mixtape",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/illwill-fall-2024-mixtape",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1961182203&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-jfYM0Gwpnuq2rZZr-DosdZQ-t500x500.jpg",
+    "tags": [],
+    "is_live_session": false
+  },
+  {
+    "id": "nolos-halloween-party",
+    "title": "Nolo's Halloween Party 10/25/24",
+    "platform": "SoundCloud",
+    "date": "2024-10-26",
+    "url": "https://soundcloud.com/cameron-walker-83/nolos-halloween-party",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/nolos-halloween-party",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1942583075&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-zTXy8XLwqY0LbLnb-0DqhvA-t500x500.jpg",
+    "tags": [],
+    "is_live_session": false
+  },
+  {
+    "id": "halloween-2024-mini-mix",
+    "title": "Halloween 2024 Mini Mix",
+    "platform": "SoundCloud",
+    "date": "2024-10-10",
+    "url": "https://soundcloud.com/cameron-walker-83/halloween-2024-mini-mix",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/halloween-2024-mini-mix",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1932876251&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-QXMu9idEpUdHfNEH-yu1U7A-t500x500.png",
+    "tags": [],
+    "is_live_session": false
+  },
+  {
+    "id": "learningmix02",
+    "title": "LearningMix02",
+    "platform": "SoundCloud",
+    "date": "2023-10-05",
+    "url": "https://soundcloud.com/cameron-walker-83/learningmix02",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/learningmix02",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1632657090&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-ArIEU7lvtbDumegj-d8CLrA-t500x500.jpg",
+    "tags": [],
+    "is_live_session": false
+  },
+  {
+    "id": "learningmix01",
+    "title": "LearningMix01",
+    "platform": "SoundCloud",
+    "date": "2023-09-19",
+    "url": "https://soundcloud.com/cameron-walker-83/learningmix01",
+    "soundcloud_track_url": "https://soundcloud.com/cameron-walker-83/learningmix01",
+    "embed": "https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F1620326487&color=%2366ffe0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "artwork": "https://i1.sndcdn.com/artworks-xArvJnPTaaZ1unv8-PG5XiQ-t500x500.jpg",
+    "tags": [],
+    "is_live_session": false
   }
 ]

@@ -21,9 +21,11 @@ const listenHref = mix.soundcloud_track_url ?? mix.url;
 const artworkSrc = mix.artwork ?? '/illwill-bg.png';
 ---
 <article class={`card mix-card ${layout}`} {...filterAttributes} data-track-stats={listenHref}>
-  <div class="mix-card__media">
-    <img src={artworkSrc} alt={`Artwork for ${mix.title}`} loading="lazy" />
-  </div>
+  {(!showEmbed || layout === 'compact') && (
+    <div class="mix-card__media">
+      <img src={artworkSrc} alt={`Artwork for ${mix.title}`} loading="lazy" />
+    </div>
+  )}
   <header class="mix-card__header">
     <div>
       <p class="kicker">{mix.platform}</p>
