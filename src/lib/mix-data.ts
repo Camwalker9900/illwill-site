@@ -133,6 +133,7 @@ export const soundcloudTotals = {
       : aggregatedStats.likes > 0
         ? aggregatedStats.likes
         : null,
+  reposts: typeof totalsFromCache.reposts === 'number' ? totalsFromCache.reposts : null,
   mixes:
     typeof totalsFromCache.mixes === 'number' ? totalsFromCache.mixes : mixLibrary.length,
 };

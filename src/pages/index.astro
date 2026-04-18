@@ -11,7 +11,6 @@ import {
   soundcloudTotals,
   soundcloudProfile,
 } from '../lib/mix-data';
-import { formatStat } from '../lib/format';
 
 const genreTags = ['Melodic House', 'Deep Tech', 'Afro-leaning Rhythms', 'Open Format'];
 const featuredMix = mixLibrary.find((mix) => mix.tags.includes('featured')) ?? mixLibrary[0];
@@ -21,6 +20,8 @@ const favoriteMixes = getFavoriteMixes(3);
 const liveHighlights = getLiveMixes(3);
 const totals = soundcloudTotals;
 const description = 'IllWIll is a Houston-based DJ delivering melodic house journeys with the flexibility to flip open-format rooms on demand.';
+const formatTotal = (value?: number | null) =>
+  typeof value === 'number' && !Number.isNaN(value) ? new Intl.NumberFormat('en-US').format(value) : '—';
 ---
 <Layout title="Home" description={description}>
   <section class="split hero">
@@ -146,15 +147,15 @@ const description = 'IllWIll is a Houston-based DJ delivering melodic house jour
     <div class="stat-grid">
       <div>
         <span>Total plays</span>
-        <strong>{formatStat(totals?.plays)}</strong>
+        <strong>{formatTotal(totals?.plays)}</strong>
       </div>
       <div>
         <span>Total likes</span>
-        <strong>{formatStat(totals?.likes)}</strong>
+        <strong>{formatTotal(totals?.likes)}</strong>
       </div>
       <div>
         <span>Reposts</span>
-        <strong>{formatStat(totals?.reposts)}</strong>
+        <strong>{formatTotal(totals?.reposts)}</strong>
       </div>
     </div>
     <div class="mix-actions">

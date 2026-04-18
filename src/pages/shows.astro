@@ -21,7 +21,8 @@ const description = `${site.name} upcoming shows, holds, and routing.`;
             <span>{show.city}</span>
           </div>
           <div class="show-meta">
-            <span>{show.venue}</span>
+            <h3>{show.title ?? show.venue}</h3>
+            {show.title && <span>{show.venue}</span>}
             {show.ticket_url && (
               <a class="button ghost" href={show.ticket_url} target="_blank" rel="noreferrer">
                 Tickets
